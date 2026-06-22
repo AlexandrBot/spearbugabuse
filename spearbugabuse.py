@@ -8,8 +8,9 @@ def keybind():
     hand = input("Hand (default: 2): ").strip() or "2"
     run_key = input('Start (default: r): ').strip() or "r"
     quit_key = input('Quit (default: ,): ').strip() or ","
-    print(f'Current keybinds:Hand={hand}, Spear={spear}, Starter={run_key}')
+    print(f'Current keybinds:Hand={hand}, Spear={spear}, Starter={run_key}, Quit_key={quit_key}')
     return spear,hand,run_key,quit_key
+
 
 def leftclick():
      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
